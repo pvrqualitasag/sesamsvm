@@ -1,0 +1,32 @@
+---
+title: "Getting Started with SESAM SVM"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with SESAM SVM}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, eval=FALSE}
+library(sesamsvm)
+```
+
+
+# Input Data
+The first step is to read the data from csv files.
+
+```{r, eval=FALSE}
+s_input_file <- "my_input.csv"
+tbl_data <- readr::read_csv(s_input_file)
+```
+
+
+# Descriptive Statistics
+Show the descriptive statistics.
